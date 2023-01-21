@@ -348,3 +348,8 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/www/html/vendor
+/www/html/.env
+/www/html/composer.phar
+/www/html/composer.lock
+/.idea
