@@ -6,7 +6,7 @@ services:
       - "80:80"
     build: ./www
     volumes:
-      - ./www/html:/usr/share/nginx/html
+      - ./www/html:/var/www/html
   db:
     image: mysql
     volumes:
@@ -16,7 +16,7 @@ services:
   phpmyadmin:
     image: phpmyadmin
     ports:
-      - 3306:80
+      - 85:80
     environment:
       - PMA_ARBITRARY=1
       - PMA_HOST=db
